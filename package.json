@@ -20,5 +20,16 @@
   "bugs": {
     "url": "https://github.com/SonOfWinter/hover-action-react-component/issues"
   },
-  "homepage": "https://github.com/SonOfWinter/hover-action-react-component#readme"
+  "homepage": "https://github.com/SonOfWinter/hover-action-react-component#readme",
+  "peerDependencies": {
+    "react": "^16.*",
+    "react-dom": "^16.*"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.11.1",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-react": "^7.10.4",
+    "typescript": "^3.*"
+  }
 }
