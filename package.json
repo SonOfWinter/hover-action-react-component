@@ -1,0 +1,24 @@
+{
+  "name": "hover-action-react-component",
+  "version": "0.1.0",
+  "description": "React component to do action on hover",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SonOfWinter/hover-action-react-component.git"
+  },
+  "keywords": [
+    "react",
+    "hover",
+    "component"
+  ],
+  "author": "SonOfWinter",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SonOfWinter/hover-action-react-component/issues"
+  },
+  "homepage": "https://github.com/SonOfWinter/hover-action-react-component#readme"
+}
