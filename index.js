@@ -10,7 +10,7 @@ var _react = _interopRequireDefault(require("react"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var HoverComponent = function HoverComponent() {
-  return /*#__PURE__*/_react.default.createElement("p", null, "test coucou");
+  return /*#__PURE__*/_react.default.createElement("p", null, "Hover component");
 };
 
 var _default = HoverComponent;
