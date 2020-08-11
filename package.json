@@ -1,7 +1,7 @@
 {
-  "name": "hover-action-react-component",
+  "name": "react-hover-action-delay",
   "version": "0.1.0",
-  "description": "React component to do action on hover",
+  "description": "React component to do action on hover after delay",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,22 +9,23 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SonOfWinter/hover-action-react-component.git"
+    "url": "git+https://github.com/SonOfWinter/react-hover-action-delay.git"
   },
   "keywords": [
     "react",
     "hover",
-    "component"
+    "component",
+    "delay"
   ],
-  "author": "SonOfWinter",
+  "author": "son-of-winter",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/SonOfWinter/hover-action-react-component/issues"
+    "url": "https://github.com/SonOfWinter/react-hover-action-delay/issues"
   },
-  "homepage": "https://github.com/SonOfWinter/hover-action-react-component#readme",
+  "homepage": "https://github.com/SonOfWinter/react-hover-action-delay#readme",
   "peerDependencies": {
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react": "^16",
+    "react-dom": "^16"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.5",
