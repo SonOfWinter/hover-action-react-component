@@ -1,6 +1,6 @@
 {
   "name": "react-hover-action-delay",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "React component to do action on hover after delay",
   "main": "index.js",
   "scripts": {
