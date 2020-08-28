@@ -7,8 +7,6 @@ exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
-var _propTypes = _interopRequireDefault(require("prop-types"));
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -106,19 +104,9 @@ var _default = /*#__PURE__*/function (_React$Component) {
 
 exports.default = _default;
 
+_defineProperty(_default, "displayName", 'HoverComponent');
+
 _defineProperty(_default, "defaultProps", {
-  timer: 0,
-  action: function action() {},
   onMouseEnter: function onMouseEnter() {},
   onMouseLeave: function onMouseLeave() {}
 });
-
-_defineProperty(_default, "propTypes", {
-  timer: _propTypes.default.number.isRequired,
-  action: _propTypes.default.func.isRequired,
-  className: _propTypes.default.string,
-  onMouseEnter: _propTypes.default.func,
-  onMouseLeave: _propTypes.default.func
-});
-
-_defineProperty(_default, "displayName", 'HoverComponent');

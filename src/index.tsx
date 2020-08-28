@@ -1,11 +1,20 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-export default class extends React.Component {
+type HoverComponentProps = {
+    timer: number,
+    action: any,
+    className?: string | undefined,
+    onMouseEnter?: any,
+    onMouseLeave?: any,
+}
+
+export default class extends React.Component<HoverComponentProps, {}> {
+
+    static displayName = 'HoverComponent';
 
     private timerIds: any[];
 
-    constructor(props) {
+    constructor(props: HoverComponentProps) {
         super(props);
         this.onMouseEnter = this.onMouseEnter.bind(this);
         this.onMouseLeave = this.onMouseLeave.bind(this);
@@ -13,21 +22,9 @@ export default class extends React.Component {
     }
 
     static defaultProps = {
-        timer: 0,
-        action: () => {},
         onMouseEnter: () => {},
         onMouseLeave: () => {}
     };
-
-    static propTypes = {
-        timer: PropTypes.number.isRequired,
-        action: PropTypes.func.isRequired,
-        className: PropTypes.string,
-        onMouseEnter: PropTypes.func,
-        onMouseLeave: PropTypes.func,
-    };
-
-    static displayName = 'HoverComponent';
 
     onMouseEnter() {
         this.props.onMouseEnter()
