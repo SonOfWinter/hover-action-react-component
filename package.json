@@ -2,10 +2,20 @@
   "name": "react-hover-action-delay",
   "version": "0.1.1",
   "description": "React component to do action on hover after delay",
-  "main": "index.js",
+  "author": "son-of-winter",
+  "main": "dist/index.js",
+  "module": "dist/index.modern.js",
+  "source": "src/index.tsx",
+  "engines": {
+    "node": ">=12"
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "./node_modules/.bin/babel ./src/index.tsx --out-file index.js"
+    "clean-dist": "rm -rf dist && mkdir dist",
+    "build": "yarn run clean-dist && node node_modules/.bin/microbundle-crl --no-compress --format modern,cjs",
+    "test:lint": "eslint ."
   },
   "repository": {
     "type": "git",
@@ -17,8 +27,6 @@
     "component",
     "delay"
   ],
-  "author": "son-of-winter",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/SonOfWinter/react-hover-action-delay/issues"
   },
@@ -36,6 +44,22 @@
     "@babel/preset-react": "^7.10.4",
     "@babel/preset-typescript": "^7.10.4",
     "@types/react": "^16.9.48",
+    "@typescript-eslint/eslint-plugin": "^4.0.1",
+    "@typescript-eslint/parser": "^4.0.1",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.8.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-config-standard-react": "^9.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.20.6",
+    "eslint-plugin-standard": "^4.0.1",
+    "gh-pages": "^3.1.0",
+    "microbundle-crl": "^0.13.11",
+    "prettier": "^2.1.1",
     "typescript": "^3.*"
   },
   "dependencies": {
